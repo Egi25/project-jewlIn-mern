@@ -4,9 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { useNavigate } from "react-router-dom";
 import { Button, Form, FormControl } from "react-bootstrap";
 
 const NavigationBar = () => {
+    const navigate = useNavigate();
   return (
     <div>
       <div className="scrolling-wrapper">
@@ -22,18 +24,17 @@ const NavigationBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/about/">About</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
+              <Nav.Link href="/contact/">Contact</Nav.Link>
+              <NavDropdown title="Collections" id="basic-nav-dropdown"  onClick={() => navigate('/collections/')}>
+                <NavDropdown.Item href="/bracelets/">Bracelets</NavDropdown.Item>
+                <NavDropdown.Item href="/necklaces/">
+                  Necklaces
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
+                <NavDropdown.Item href="/rings/">
+                  Rings
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
+                <NavDropdown.Item href="earrings">
+                 Earrings
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>

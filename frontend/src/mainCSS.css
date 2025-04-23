@@ -1,70 +1,112 @@
- body{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
- }
-.photohero{
-    object-fit: cover;
-    height: 500px;
-    width: 100%;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
 }
-.heroContainer{
-    position: relative;
+.photo-default {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
 }
-.heroContainer>div{
-    position: absolute;
-    top:50%;
-    left:20%;
-    transform: translate(-50%,-50%);
+.relative-container {
+  position: relative;
+  width: 100%;
+  max-height: 100vh;
+}
+.relative-container > section {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
 }
 .scrolling-wrapper {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    width: 100%;
-  }
-  
-  .scrolling-content {
-    display: inline-block;
-    padding-left: 100%; /* start off-screen */
-    animation: scroll-loop 15s linear infinite;
-  }
-  
-  @keyframes scroll-loop {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
 
-  .reviewPhoto{
-    border-radius:10%;
-    height:100px;
+.scrolling-content {
+  display: inline-block;
+  padding-left: 100%; /* start off-screen */
+  animation: scroll-loop 15s linear infinite;
+}
+
+@keyframes scroll-loop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.reviewPhoto {
+  border-radius: 10%;
+  height: 100px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.testmonials-block {
+  width: 80%;
+  margin: auto;
+  background-color: rgba(169, 169, 169, 0.228);
+  border-radius: 10px;
+}
+.testmonials-block blockquote {
+  width: 80%;
+  margin: auto;
+}
+.review-stars {
+  font-size: 24px; /* Bigger size */
+  color: rgb(139, 139, 8); /* Yellow color */
+  padding: 2px 6px; /* Some padding around the stars */
+  border-radius: 5px; /* Optional: rounded border */
+  display: inline-block;
+}
+.about-background {
+  background-color: black;
+  color: aliceblue;
+  font-weight: bold;
+  padding-top: 10em;
+}
+.contact-container {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #323431bc;
+  font-size: 15px;
+  padding: 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border-radius: 10px;
+  /* max-width: 400px; */
+  height: auto;
+  text-align: center;
+}
+
+.contact-container .form-control {
+  background-color: transparent !important;
+  border: none;
+  border-radius: 0%;
+  border-bottom: 1px solid #3f362f7e;
+  color: black;
+}
+.information{
+    width: 80%;
+    text-align: left;
+    padding-left: 2em;
+}
+.store-card{
+    border-radius: 0%;
+    border: none;
+    background-color: antiquewhite;
+    /* height:100%; */
+    
+ 
+}
+.store-img{
+   height: 300px;
     object-fit: cover;
-    overflow: hidden;
-  }
-  .testmonials-block{
-    width: 80%;
-    margin: auto;
-    background-color: rgba(169, 169, 169, 0.228);
-    border-radius: 10px;
-
-  }
-  .testmonials-block blockquote{
-    width: 80%;
-    margin: auto;
-  }
-  .review-stars{
-    font-size: 24px;          /* Bigger size */
-    color: rgb(139, 139, 8);            /* Yellow color */
-    padding: 2px 6px;         /* Some padding around the stars */
-    border-radius: 5px;       /* Optional: rounded border */
-    display: inline-block;  
-  }
-  .about-background{
-    background-color: black;
-    color: aliceblue;
-    font-weight: bold;
-    padding-top: 10em;
-  }
+}

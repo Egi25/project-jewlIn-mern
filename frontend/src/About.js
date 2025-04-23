@@ -56,14 +56,14 @@ const About = () => {
             </p>
           </Col>
           <Col lg={6}>
-            <Image src={woman2} className="photohero" fluid />
+            <Image src={woman2} className="photo-default" fluid />
           </Col>
         </Row>
       </Container>
       <Container fluid className="my-5">
         <Row>
           <Col lg={6}>
-            <Image src={owner} className="photohero" fluid />
+            <Image src={owner} className="photo-default" fluid />
           </Col>
           <Col lg={6}>
             <h1 className="fw-bold"> A word from the funder </h1>
@@ -99,7 +99,7 @@ const About = () => {
             </p>
           </Col>
           <Col lg={6}>
-            <Image src={store1} className="photohero" fluid />
+            <Image src={store1} className="photo-default" fluid />
           </Col>
         </Row>
       </Container>
