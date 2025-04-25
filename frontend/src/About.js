@@ -11,7 +11,7 @@ const About = () => {
         <Row className="g-0">
           <Col
             lg={6}
-            className="about-background d-flex align-items-center justify-content-center text-center"
+            className="font1 about-background d-flex align-items-center justify-content-center text-center"
           >
             <h1> WE ARE ON A MISSION TO REFINE LUXURY </h1>
           </Col>
@@ -35,14 +35,15 @@ const About = () => {
       </section>
       <section
         fluid
-        style={{ backgroundColor: "beige", height: "3em", width: "100%" }}
+        style={{ backgroundColor: "beige", height: "3em", width: "100%",}}
+    className="pt-3"
       >
-        <p>our values our values our values our values</p>
+        <h5 className="font1" style={{letterSpacing:"2px",wordSpacing: "10px"}}>our  values  our values  our values  our values</h5>
       </section>
       <Container fluid className="my-5">
         <Row>
           <Col lg={6}>
-            <h1 className="fw-bold"> Our desgins </h1>
+            <h1 className="fw-bold font1"> Our desgins </h1>
             <p>
               We are increasing our positive impact on people and the planet
               through how we design our jewelry, where we source our materials,
@@ -66,7 +67,7 @@ const About = () => {
             <Image src={owner} className="photo-default" fluid />
           </Col>
           <Col lg={6}>
-            <h1 className="fw-bold"> A word from the funder </h1>
+            <h1 className="fw-bold font1"> A word from the funder </h1>
             <p>
               We are increasing our positive impact on people and the planet
               through how we design our jewelry, where we source our materials,
@@ -85,7 +86,7 @@ const About = () => {
         <Row>
           
           <Col lg={6}>
-            <h1 className="fw-bold"> Mission and vision</h1>
+            <h1 className="fw-bold font1"> Mission and vision</h1>
             <p>
               We are increasing our positive impact on people and the planet
               through how we design our jewelry, where we source our materials,

@@ -2,7 +2,9 @@ import React from 'react'
 
 const Rings = () => {
   return (
-    <div>Rings</div>
+    <div>
+      <h1 className='font1'>Rings</h1>
+    </div>
   )
 }
 
