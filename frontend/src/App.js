@@ -11,7 +11,15 @@ import Bracelets from './Collections/Bracelets';
 import Earrings from './Collections/Earrings';
 import Necklace from './Collections/Necklace';
 import Rings from './Collections/Rings';
+import CreateBest from './CRUD/CreateBest';
+import BestSellerList from './CRUD/BestSellerList';
+import SingleProduct from './CRUD/SingleProduct';
+import CreateNew from './CRUD/CreateNew';
+import NewArrivalsList from './CRUD/BestSellerList';
+
+// const items = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
 function App() {
+
   return (
     <div className="App">
       <NavigationBar/>
@@ -24,9 +32,15 @@ function App() {
         <Route path="/earrings" element={<Earrings/>}/>
         <Route path="/necklaces" element={<Necklace/>}/>
         <Route path="/rings" element={<Rings/>}/>
+        <Route  path="/createbest" element={<CreateBest/>}/>
+        <Route  path="/bestlist" element={<BestSellerList/>}/>
+        <Route path="/readOne/:id" element={<SingleProduct/>} />
+        <Route path="/createnew" element={<CreateNew/>} />
+        <Route path="/newlist" element={<NewArrivalsList/>} /> 
       </Routes>
      
       <Footer/>
+      
     </div>
   );
 }

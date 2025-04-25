@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "./Hero";
+import BestSellerList from "./CRUD/BestSellerList";
 import {
   Container,
   Row,
@@ -44,7 +45,7 @@ const Home = () => {
       <Hero />
       <section>
         <h2>Top 15 trending jewlery</h2>
-        <p>keto do te hidhen nga databaza</p>
+        <BestSellerList/>
       </section>
       <h2>Who are we</h2>
       <Container>
@@ -72,7 +73,7 @@ const Home = () => {
         <h2>New arrivals</h2>
         <p>keto do te hidhen nga databaza</p>
       </section>
-      <Container className="text-center my-5">
+      <Container className="text-center my-5" id="faq">
         <h2>Frequently asked questions </h2>
         <Row className="justify-content-center">
           <Col>

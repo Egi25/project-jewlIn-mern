@@ -18,6 +18,13 @@ body {
   left: 20%;
   transform: translate(-50%, -50%);
 }
+.image-animation {
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.image-animation:hover {
+  transform: scale(1.1); /* Slightly zoom in */
+}
 .scrolling-wrapper {
   overflow: hidden;
   white-space: nowrap;
@@ -93,20 +100,59 @@ body {
   border-bottom: 1px solid #3f362f7e;
   color: black;
 }
-.information{
-    width: 80%;
-    text-align: left;
-    padding-left: 2em;
+.information {
+  width: 80%;
+  text-align: left;
+  padding-left: 2em;
 }
-.store-card{
-    border-radius: 0%;
-    border: none;
-    background-color: antiquewhite;
-    /* height:100%; */
-    
- 
+.store-card {
+  border-radius: 0%;
+  border: none;
+  background-color: antiquewhite;
+  /* height:100%; */
 }
-.store-img{
-   height: 300px;
-    object-fit: cover;
+.store-img {
+  height: 300px;
+  object-fit: cover;
+}
+footer {
+  background-color: #fff;
+  color: black;
+}
+footer a {
+  color: black;
+  font-family: "Special Gothic Condensed One", sans-serif;
+  font-weight: 10;
+  /* font-size: small; */
+}
+.font1,
+h1,
+h2,
+h3 {
+  font-family: "Special Gothic Condensed One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.prompt-regular {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0cap;
+}
+.nav {
+  color: black !important;
+  font-family: "Special Gothic Condensed One", sans-serif;
+  letter-spacing: 2px;
+  font-size: medium;
+}
+#basic-nav-dropdown {
+  color: black;
+}
+.button-style {
+  color: black;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid black;
+  border-radius: 0%;
+  font-family: "Special Gothic Condensed One", sans-serif;
 }
